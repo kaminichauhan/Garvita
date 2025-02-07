@@ -21,7 +21,7 @@
 
         
 
-        .form-container {
+       .form-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -52,18 +52,14 @@
             justify-content: center;
             align-items: center;
         }
+        
 
-        .form-right img {
-            max-width: 100%;
-            border-radius: 50%;
-        }
-
+        
         .form-control {
             margin-bottom: 15px;
             border: none;
             outline: none;
             border-bottom: 2px solid black;
-            
         }
 
         .btn {
@@ -71,6 +67,62 @@
             color: white;
             border: none;
             padding: 10px 200px;
+        }
+
+        .subscribe-section1 {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        
+        /* Media Queries */
+        @media (max-width: 1024px) {
+            .form-container {
+                flex-direction: column;
+            }
+
+            .form-left, .form-right {
+                flex: none;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .btn {
+                padding: 10px 100px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .form-left h1 {
+                font-size: 1.75rem;
+            }
+
+            .btn {
+                padding: 10px 50px;
+            }
+
+           
+        }
+
+        @media (max-width: 372px) {
+            .form-left h1 {
+                font-size: 1.5rem;
+            }
+
+            .form-left h2 {
+                font-size: 1.25rem;
+            }
+
+            .btn {
+                width: 100%;
+                padding: 10px 20px;
+            }
+
+            /* .footer-section {
+                margin-bottom: 15px;
+            } */
         }
     </style>
 
@@ -112,7 +164,7 @@
                     <nav class="classy-navbar justify-content-between" id="alimeNav">
 
                         <!-- Logo -->
-                        <!-- <a class="nav-brand" href="index.html"><img src="img/core-img/logo.png" alt=""></a> -->
+                        <a class="nav-brand" href="index.html"><img src="img/bg-img/logo-removebg-preview.png" alt="" width="100px" height="100px" ></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -137,7 +189,7 @@
                                             <li><a href="kids.html">- Kids </a></li>
                                             <li><a href="birthday.html">- Birthday</a></li>
                                             <li><a href="family.html">- Family </a></li>
-                                            <li><a href="#">- Pre-wedding </a></li>
+                                            <li><a href="pre-wedding.html">- Pre-wedding </a></li>
 
                                         </ul>
                                     </li>
@@ -159,8 +211,8 @@
     </header>
     <!-- Header Area End -->
 
-    <!-- Breadcrumb Area Start -->
-    <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/wedding.avif);">
+     <!-- Breadcrumb Area Start -->
+     <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/2.png);">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">
@@ -180,8 +232,8 @@
     <!-- Breadcrumb Area End -->
 
     <!-- Contact Area Start -->
-    <div class="container form-container ">
-        <div class="form-left">
+    <div class="container form-container">
+        <div class="col-md-6 form-left">
             <h2>Send us your query</h2>
             <h1>Submit the below form</h1>
             <form>
@@ -189,41 +241,53 @@
                 <input type="email" class="form-control" placeholder="Email" required>
                 <input type="tel" class="form-control" placeholder="Mobile Number" required>
                 <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
-                <button type="submit" class="btn ">Send</button>
+                <button type="submit" class="btn">Send</button>
             </form>
         </div>
-        <div class="form-right">
-            <img src="img/bg-img/" alt="Heaven Studio Logo">
+        <div class="col-md-6 form-right d-flex justify-content-center align-items-center" style="background-color: hsl(46.36deg 83.02% 58.43%); border-radius: 50%; ">
+            <img src="img/bg-img/logo-removebg-preview.png" width="300px" height="100px" alt="Heaven Studio Logo">
         </div>
     </div>
     <!-- Contact Area End -->
 
-    <section class="subscribe-section1 mb-5 ">
+     <!---Subscribe Start-->
+
+    <section class="subscribe-section1 mb-5">
         <div class="container">
             <div class="subscribe-content">
-                <h1 style="font-size: 40px; color: white;">Contact Us</h1>
-                <h2 style="font-size: 40px;">Make Your Dream<br>
-                    Come True</h2>
-                
+                <h1>Contact Us</h1>
+                <h2>Make Your Dream<br>Come True</h2>
             </div>
         </div>
     </section>
+    <!----Subscribe End-->
+    
+    <!---Whhat's Up Icon-->
+    
+    <div class="contact-icons">
+        <a href="#" target="_blank" class="whatsapp" title="Chat on WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+        <a href="#" class="call" title="Call Us">
+            <i class="bi bi-telephone"></i>
+        </a>
+    </div>
+    <!---What's Up Icon-->
 
     <!-- Footer Area Start -->
     <footer>
         <div class="container footer-container">
             <!-- First Section: Image -->
             <div class="footer-section footer-logo">
-                <img src="your-logo.png" alt="Company Logo">
+                <img src="img/bg-img/logo-removebg-preview.png" width="200px" height="200px" alt="Company Logo">
             </div>
-
             <!-- Second Section: Quick Links -->
             <div class="footer-section footer-links">
                 <h5>Quick Links</h5>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
-                    <li><a href="#">career</a></li>
+                    <li><a href="#">Career</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Portfolio</a></li>
                 </ul>
@@ -232,9 +296,8 @@
             <!-- Third Section: Address -->
             <div class="footer-section footer-address">
                 <h5>Address</h5>
-                <p>Office no 1217<br> Gali, no-4, Balram nagar,colony Ghaziabad</p>
+                <p>Office no 1217<br> Gali, no-4, Balram nagar, colony Ghaziabad</p>
                 <p>Phone: 9582924570</p>
-                <!-- <p>Email: info@example.com</p> -->
             </div>
         </div>
     </footer>
@@ -251,7 +314,6 @@
     <script src="js/alime.bundle.js"></script>
     <!-- Active -->
     <script src="js/default-assets/active.js"></script>
-
 </body>
 
 </html>
