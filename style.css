@@ -43,6 +43,141 @@ Last Update: Feb 22, 2019
 
 @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+h1{ padding: 0 0 30px; }
+.main-timeline{ font-family: 'Poppins', sans-serif; }
+.main-timeline:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.main-timeline:before{
+    content: '';
+    background-color: #000;
+    height: 100%;
+    width: 4px;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+.main-timeline .timeline{
+    width: 50%;
+    padding: 3px 0;
+    margin: 0 2px 0 0;
+    float: left;
+}
+.main-timeline .timeline-content{
+    color: #777;
+    padding: 0 130px 0 0;
+    display: block;
+    position: relative;
+}
+.main-timeline .timeline-content:hover{ text-decoration: none; }
+.main-timeline .timeline-content:before{
+    content: '';
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    right: -10px;
+    top: 50%;
+}
+.main-timeline .timeline-icon{
+    color: #fff;
+    background-color: #FE553B;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 80px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 11px;
+    z-index: 1;
+}
+.main-timeline .timeline-icon i{ line-height:inherit; }
+.main-timeline .title{
+    color: #FE553B;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    margin: 0 0 8px;
+}
+.main-timeline .description{
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 22px;
+    margin: 0;
+}
+.main-timeline .timeline:nth-child(even){
+    margin: 0 0 0 2px;
+    float: right;
+}
+.main-timeline .timeline:nth-child(even) .timeline-content{ padding: 0 0 0 130px; }
+.main-timeline .timeline:nth-child(even) .timeline-content:before{
+    right: auto;
+    left: -10px;
+}
+.main-timeline .timeline:nth-child(even) .timeline-icon{
+    right: auto;
+    left: 11px;
+}
+.main-timeline .timeline:nth-child(4n+2) .timeline-icon{ background-color: #5CC33A; }
+.main-timeline .timeline:nth-child(4n+2) .title{ color: #5CC33A; }
+.main-timeline .timeline:nth-child(4n+3) .timeline-icon{ background-color: #FE3356; }
+.main-timeline .timeline:nth-child(4n+3) .title{ color: #FE3356; }
+.main-timeline .timeline:nth-child(4n+4) .timeline-icon{ background-color: #009B99; }
+.main-timeline .timeline:nth-child(4n+4) .title{ color: #009B99; }
+@media screen and (max-width:767px){
+    .main-timeline:before{
+        transform: translateX(0);
+        left: 23px;
+    }
+    .main-timeline .timeline,
+    .main-timeline .timeline:nth-child(even){
+        width: 100%;
+        margin: 0 0 20px;
+    }
+    .main-timeline .timeline-content,
+    .main-timeline .timeline:nth-child(even) .timeline-content{
+        padding: 0 0 0 150px;
+    }
+    .main-timeline .timeline-content:before,
+    .main-timeline .timeline:nth-child(even) .timeline-content:before{
+        left: 0;
+    }
+    .main-timeline .timeline-icon,
+    .main-timeline .timeline:nth-child(even) .timeline-icon{
+        left: 20px;
+        right: auto;
+    }
+}
+@media screen and (max-width:479px){
+    .main-timeline .timeline-content,
+    .main-timeline .timeline:nth-child(even) .timeline-content{
+        padding: 120px 0 0 25px;
+    }
+    .main-timeline .timeline-content:before,
+    .main-timeline .timeline:nth-child(even) .timeline-content:before{
+        transform: translateY(0);
+        top: 43px;
+    }
+    .main-timeline .timeline-icon,
+    .main-timeline .timeline:nth-child(even) .timeline-icon{
+        transform: translateY(0);
+        top: 0;
+    }
+}
 
 /* :: 01.0 Reboot CSS */
 * {
@@ -546,7 +681,7 @@ input:required {
 .alime-btn:focus,
 .alime-btn:hover {
   font-weight: 500;
-  -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
+  -webkit-box-shadow: 0 2px 40px 8px rgba(165, 68, 68, 0.15);
   box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
   background-color: #fc6060;
   color: #ffffff;
@@ -1282,63 +1417,104 @@ input:required {
 }
 
 /* :: 12.0 Breadcrumb CSS */
-.breadcrumb-area {
+/* Base Styles */
+
+/* Breadcrumb Section Styles */
+.breadcrumb-section {
   position: relative;
-  z-index: 1;
-  height: 370px;
 }
 
-@media only screen and (max-width: 767px) {
-  .breadcrumb-area {
-    height: 240px;
-  }
-}
-
-.breadcrumb-area .page-title {
-  color: #ffffff;
-  font-size: 36px;
-}
-
-@media only screen and (max-width: 767px) {
-  .breadcrumb-area .page-title {
-    font-size: 24px;
-  }
+.breadcrumb-area {
+  height: 50vh; /* Set the height to 50% of the viewport on larger screens */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(img/bg-img/banner4\(1\)\(1\).png);
 }
 
 .breadcrumb-content {
-  position: relative;
-  z-index: 1;
-  margin-top: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  text-align: center;
+
+
 }
 
-.breadcrumb-content .breadcrumb {
-  padding: 0;
-  background-color: transparent;
-  margin-bottom: 0;
+.page-title {
+  font-size: 36px; /* Default font size */
+  color: black;
+  
 }
 
-.breadcrumb-content .breadcrumb .breadcrumb-item {
-  color: #fc6060;
-  font-weight: 400;
-  font-size: 16px;
+.breadcrumb {
+  font-size: 14px;
+  display: flex;
+  color: black;
 }
 
-.breadcrumb-content .breadcrumb .breadcrumb-item a {
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 400;
+.breadcrumb-item a {
+  color:black;
+  text-decoration: none;
+  color:black;
 }
 
-.breadcrumb-content .breadcrumb .breadcrumb-item a:hover,
-.breadcrumb-content .breadcrumb .breadcrumb-item a:focus {
-  color: #fc6060;
+.breadcrumb-item.active {
+  color: black;
 }
 
-.breadcrumb-content .breadcrumb .breadcrumb-item+.breadcrumb-item::before {
-  content: '\f105';
-  color: #ffffff;
-  font-family: "FontAwesome";
+/* Media Queries */
+@media (max-width: 991px) {
+  .breadcrumb-area {
+      height: 40vh; /* On tablets and smaller devices, reduce the height */
+  }
+
+  .page-title {
+      font-size: 28px; /* Reduce the font size for medium screens */
+  }
+
+  .breadcrumb {
+      font-size: 12px;
+  }
 }
+
+@media (max-width: 576px) {
+  .breadcrumb-area {
+      height: 35vh; /* On small screens, further reduce the height */
+  }
+
+  /* For very small screens (extra small devices like old iPhones or portrait view on small tablets) */
+@media (max-width: 375px) {
+  .breadcrumb-area {
+      height: 30vh; /* Further reduce height for small devices */
+  }
+
+  .page-title {
+      font-size: 20px; /* Smaller page title */
+  }
+
+  .breadcrumb {
+      font-size: 9px; /* Reduce breadcrumb font size for very small screens */
+  }
+}
+  .page-title {
+      font-size: 24px; /* Reduce font size even further on smaller screens */
+  }
+
+  .breadcrumb {
+      font-size: 10px; /* Smaller breadcrumb text */
+  }
+
+  .breadcrumb-item a {
+      color: black;
+      font-size: 12px; /* Ensure readability on small screens */
+  }
+}
+
+
+ 
 
 .breadcrumb-area.blog {
   height: 550px;
@@ -2568,7 +2744,7 @@ input:required {
 
 
 footer {
-  background-image: linear-gradient(to right,rgb(105, 105, 228),rgb(171, 171, 226));
+  background-image: linear-gradient(to right,rgba(231, 154, 102, 0.336),rgba(180, 89, 46, 0.555));
   color: rgb(255, 255, 255);
   padding: 40px 20px;
 }
@@ -2661,6 +2837,9 @@ footer {
 
 
 /* subscribe */
+
+/* Set background image for subscribe section */
+
 .subscribe-section {
   background: url('./img/bg-img/baby3.jpg') no-repeat center center;
   background-size: cover;
@@ -2707,6 +2886,8 @@ footer {
   padding: 10px;
   border: none;
   outline: none;
+  display: inline;
+
 }
 
 .subscribe-input button {
@@ -2719,11 +2900,25 @@ footer {
   transition: 0.3s;
 }
 
+
 .subscribe-input button:hover {
   background: #f8b400;
   color: white;
-}
+} 
 
+/*  */
+@media (max-width:500px) {
+  .subscribe-input{
+    max-width: 350px;
+  }
+  .subscribe-input button {
+    padding: 10px 40px 10px 10px;
+   
+  }
+  .subscribe-input input {
+   width: 100px;
+  }
+}
 
 .subscribe-section1 {
   background: url('./img/bg-img/Untitled-design-39-1.png') no-repeat center center;
@@ -2734,6 +2929,7 @@ footer {
   position: relative;
 
 }
+
 
 
 
@@ -2777,7 +2973,7 @@ footer {
 @media (max-width: 768px) {
   .contact-icons {
     left: 10px;
-    bottom: 10px;
+    bottom: 220px;
   }
 
   .contact-icons a {
