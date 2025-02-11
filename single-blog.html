@@ -6,15 +6,166 @@
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Title -->
-    <title>Alime - Photography HTML Template</title>
+    <title>Garvita-Production</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.png">
+    <!-- <link rel="icon" href="img/core-img/favicon.png"> -->
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic reset for margin and padding */
+
+
+/* Blog section styles */
+/* Basic reset */
+
+/* Blog Section Styles */
+.blog-section {
+    background-image: url('./img/bg-img/baby2.avif'); /* Background image URL */
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+@media (max-width: 768px) {
+    .blog-section {
+        padding: 20px;
+        text-align: center;
+        height: 300px;
+    }
+    @media (max-width: 425px) {
+    .blog-section {
+        padding: 20px;
+        text-align: center;
+        height: 200px;
+    }
+}}
+
+
+
+.blog {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.blog h2 {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #444;
+}
+
+.blog p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.blog span {
+    color: skyblue;
+}
+
+.blog .cta-button {
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.blog .cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .blog h2 {
+        font-size: 1.8rem;
+    }
+
+    .blog p {
+        font-size: 1rem;
+    }
+
+    .blog .cta-button {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .blog h2 {
+        font-size: 1.6rem;
+    }
+
+    .blog p {
+        font-size: 0.95rem;
+    }
+
+    .blog .cta-button {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog h2 {
+        font-size: 1.4rem;
+    }
+
+    .blog p {
+        font-size: 0.9rem;
+    }
+
+    .blog .cta-button {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .blog h2 {
+        font-size: 1.2rem;
+    }
+
+    .blog p {
+        font-size: 0.85rem;
+    }
+
+    .blog .cta-button {
+        font-size: 0.75rem;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .blog h2 {
+        font-size: 1rem;
+    }
+
+    .blog p {
+        font-size: 0.8rem;
+    }
+
+    .blog .cta-button {
+        font-size: 0.7rem;
+        padding: 5px 10px;
+    }
+}
+
+
+
+    </style>
 
 </head>
 
@@ -26,14 +177,14 @@
     <!-- /Preloader -->
 
     <!-- Top Search Form Area -->
-    <div class="top-search-area">
+    <!-- <div class="top-search-area">
         <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <!-- Close -->
+                        
                         <button type="button" class="btn close-btn" data-dismiss="modal"><i class="ti-close"></i></button>
-                        <!-- Form -->
+                      
                         <form action="index.html" method="post">
                             <input type="search" name="top-search-bar" class="form-control" placeholder="Search and hit enter...">
                             <button type="submit">Search</button>
@@ -42,7 +193,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Header Area Start -->
     <header class="header-area">
@@ -54,8 +205,7 @@
                     <nav class="classy-navbar justify-content-between" id="alimeNav">
 
                         <!-- Logo -->
-                        <a class="nav-brand" href="index.html"><img src="img/core-img/logo.png" alt=""></a>
-
+                        <a class="nav-brand" href="index.html"><img src="img/bg-img/logo-removebg-preview.png" alt="" width="100px" height="100px"  style="padding-top: 15px;" ></a>
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
                             <span class="navbarToggler"><span></span><span></span><span></span></span>
@@ -71,32 +221,25 @@
                             <div class="classynav">
                                 <ul id="nav">
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="#">Pages</a>
+                                    <li><a href="#">Portfolio</a>
                                         <ul class="dropdown">
-                                            <li><a href="index.html">- Home</a></li>
-                                            <li><a href="about.html">- About</a></li>
-                                            <li><a href="gallery.html">- Gallery</a></li>
-                                            <li><a href="blog.html">- Blog</a></li>
-                                            <li><a href="single-blog.html">- Blog Details</a></li>
-                                            <li><a href="contact.html">- Contact</a></li>
-                                            <li><a href="#">- Dropdown</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                </ul>
-                                            </li>
+                                            <li><a href="maternity.html">- Maternity</a></li>
+                                            <li><a href="wedding.html">- Wedding</a></li>
+                                            <li><a href="new-born.html">- New Born</a></li>
+                                            <li><a href="kids.html">- Kids </a></li>
+                                            <li><a href="birthday.html">- Birthday</a></li>
+                                            <li><a href="family.html">- Family </a></li>
+                                            <li><a href="pre-wedding.html">- Pre-wedding </a></li>
+
                                         </ul>
                                     </li>
                                     <li><a href="about.html">About</a></li>
-                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="career.html">Career</a></li>
                                     <li class="active"><a href="blog.html">Blog</a></li>
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
 
-                                <!-- Search Icon -->
-                                <div class="search-icon" data-toggle="modal" data-target="#searchModal"><i class="ti-search"></i></div>
+                               
                             </div>
                             <!-- Nav End -->
                         </div>
@@ -107,98 +250,47 @@
     </header>
     <!-- Header Area End -->
 
-    <!-- Breadcrumb Area Start -->
-    <section class="breadcrumb-area blog bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/18.jpg);">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-12">
-                    <div class="breadcrumb-content text-center">
-                        <a href="#" class="btn post-catagory">Nature</a>
-                        <h2 class="page-title">Sunset over Cantal, France</h2>
-                        <div class="post-meta">
-                            <a href="#" class="post-author">By Jared Padilla</a>
-                            <a href="#" class="post-date">July 15, 2019</a>
-                            <a href="#" class="post-comments">No Comments</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section >
+        <div class="blog-section"></div>
     </section>
-    <!-- Breadcrumb Area End -->
+    <section class="blog">
+        <h2 class="heading1">How to Capture Precious Moments with Affordable Baby & Maternity Photography in Noida</h2>
+        <span style="color: skyblue;">Newborn Photography</span>
+        <p style="padding-top: 25px;">Welcoming a new baby is a life-changing experience, filled with excitement, love, and countless precious moments. Capturing these early stages through photography allows you to preserve these memories forever. But many parents are concerned about the cost of professional photography, especially when they have other expenses to manage. Fortunately, there are affordable options for baby and <span style="color: skyblue;"> maternity photography in Noida</span> that ensure you don’t have to sacrifice quality for price.</p>
+        <p style="padding-top: 10px;">In this guide, we’ll explore how to capture those precious moments while keeping your budget in mind. Whether you’re looking for maternity photos that showcase your pregnancy glow or baby photos that celebrate your newborn, we’ll help you find cost-effective solutions for beautiful photography.</p>
+        <h2>1. The Importance of Maternity and Baby Photography</h2>
+        <p><span style="color: skyblue;">Maternity photography</span> captures the beauty of pregnancy and celebrates the journey of motherhood. These photos highlight the bond between parents and their unborn child, allowing you to look back on the experience with fond memories.</p>
+        <p>Baby photography, on the other hand, focuses on the earliest days of your child’s life. From their first smile to their tiny fingers and toes, every moment can be captured in a way that reflects the innocence and wonder of a newborn.</p>
+        <p>Both types of photography create lasting memories that you and your family can cherish for years to come. The good news is, you don’t need to spend a fortune to get professional photos that you love. There are many affordable options available, especially in a city like Noida, which is home to numerous talented photographers.</p>
+        <h2>2. Affordable Maternity Photography in Noida</h2>
+        <p>Maternity photography is all about capturing the joy and anticipation of becoming a parent. However, it doesn’t have to come with a high price tag. Here’s how you can find affordable maternity photography options in Noida:</p>
+        <h2>a. Look for Local Photographers</h2>
+        <p>Many talented local photographers in Noida offer competitive pricing for maternity photography. These photographers often provide packages that cater to different budgets, allowing you to choose the one that fits your needs. A great way to find local photographers is through social media platforms like Instagram or Facebook, where photographers showcase their portfolios and offer discounts or deals.</p>
+        <h2>b. Choose Basic Packages</h2>
+        <p>Many photographers offer basic maternity photography packages that focus on capturing the essential moments. These packages often include a shorter photo session and a limited number of edited images, making them more affordable. You can always opt for more elaborate packages if your budget allows, but basic packages are a great way to get stunning photos without overspending.</p>
+        <h2>3. Affordable Baby Photography in Noida</h2>
+        <p>Once your little one arrives, baby photography becomes a must-have. You’ll want to capture those fleeting moments before they grow up too fast. Here are some ways to find affordable baby photography in Noida:</p>
+        <h2>a. Look for New Photographers or Photography Students</h2>
+        <p>Many new photographers or photography students offer discounted rates as they build their portfolios. While they may not have years of experience, many of them are incredibly talented and can provide you with beautiful baby photos at a fraction of the cost. You can find these photographers through online forums, social media, or photography schools in Noida.</p>
+        <h2>b. Book Mini Sessions</h2>
+        <p>Many photographers offer mini photography sessions that are shorter in duration and come with a lower price. These sessions are ideal for parents who want a quick photoshoot to capture their newborn’s early days without committing to a full-length, high-cost session.</p>
+        <h2>4. Balancing Affordability with Quality</h2>
+        <p>When looking for affordable photography services, it’s important to balance cost with quality. You don’t want to compromise on the final product just to save a few bucks. Here are some tips to ensure you get the best value for your money:</p>
+        <h2>a. Check Reviews and Portfolios</h2>
+        <p>Always check the reviews and portfolios of photographers before booking them. This will give you an idea of the quality of their work and help you determine if they can meet your expectations. Most photographers have portfolios on their websites or social media, so take the time to browse through their previous work.</p>
+        <h2>5. Why Choose Noida for Your Photography Needs?</h2>
+        <p>Noida is a hub for talented photographers who offer a wide range of photography services. From the vibrant cityscape to beautiful outdoor locations, Noida provides the perfect backdrop for both maternity and baby photography.</p>
+        <h2>Conclusion</h2>
+        <p>Capturing the precious moments of pregnancy and your baby’s early days doesn’t have to be expensive. By choosing affordable options, such as local photographers, mini sessions, or at-home shoots, you can get high-quality maternity and baby photography without overspending. Noida offers a wide range of photographers who are both skilled and budget-friendly, ensuring that every parent can cherish these special moments forever.</p>
+      <div>
 
-    <!-- Blog Details Area Start -->
-    <div class="alime--blog-area section-padding-80">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-10">
-                    <!-- Blog Details Text -->
-                    <div class="blog-details-text">
-                        <p>In recent years people have realized the importance of proper diet and exercise, and recent surveys show that over the last 20 years people are eating better and working out more often, resulting in people living longer, but people are still lacking in their understanding that their mental well being is just as important as their physical health.</p>
+      </div>
 
-                        <p>Today most people get on average 4 to 6 hours of exercise every day, and make sure that everything they put in their mouths is not filled with sugars or preservatives, but they pay no attention to their mental health, no vacations, not even the occasional long weekend, 60 hour weeks, taking work home with them and even working weekends. All of this for hopes of one day getting that big promotion. What good will it do you when your brain overloads and you have a breakdown in the office.</p>
+    </section>
 
-                        <div class="my-5">
-                            <div class="row">
-                                <div class="col-12 col-lg-8">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-6">
-                                            <img class="mb-10" src="img/bg-img/60.jpg" alt="">
-                                        </div>
-                                        <div class="col-12 col-sm-6">
-                                            <img class="mb-10" src="img/bg-img/61.jpg" alt="">
-                                        </div>
-                                        <div class="col-12">
-                                            <img class="mb-10" src="img/bg-img/63.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-4">
-                                    <img class="mb-10" src="img/bg-img/62.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
+    
 
-                        <p>In the end your physical health will suffer no matter how well you eat and how often you exercise. You will wind up with high blood pressure, stress and tension all of which raises the chances of you having a stroke or heart attack.</p>
-
-                        <p>In hopes of helping you avoid this I am providing you with the things I do to keep my mental health in tip top condition.</p>
-
-                        <p>My absolute favorite thing to do to refocus myself is to go for a long ride on my Harley. Nothing brings the world back into focus like riding free like the wind, there is no better forms of therapy as far as I am concerned.</p>
-
-                        <!-- Blockquote -->
-                        <blockquote class="alime-blockquote">
-                            <h4>Thank you for shooting Jared's Bar Mitzvah. Our experience working with you was fantastic and the pictures you captured are outstanding and really captured the magic of the day.</h4>
-                            <h6>- Ron &amp; Nina B</h6>
-                        </blockquote>
-
-                        <p>I also enjoy watching an hour or 2 of television every night, some light sitcoms are a great way to lighten your minds load, and laughing out loud for 30 seconds every day is a great way to release stress.</p>
-
-                        <p>Video games are also great for stress release, if you are mad at your boss what better way to get it out of you then boxing, just imagine you are pounding on your boss and hope you don’t lose. I hope you try some of these methods or think of some of your own to help keep the stress down in your life and keep your mental health in as good of condition as the rest of you.</p>
-                    </div>
-
-                    <!-- Post Author Area -->
-                    <div class="post-author-area mt-50 d-flex align-items-center justify-content-between">
-                        <ul class="popular-tags">
-                            <li><a class="btn badges-btn" href="#">CAMERA</a></li>
-                            <li><a class="btn badges-btn" href="#">PHOTOGRAHY</a></li>
-                            <li><a class="btn badges-btn" href="#">TIPS</a></li>
-                        </ul>
-
-                        <!-- Share Info -->
-                        <div class="post-social-info d-flex align-items-center">
-                            <p>Share:</p>
-                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Blog Details Area End -->
+   
 
     <!-- Pager Area Start -->
     <div class="alime-pager-area section-padding-0-80">
@@ -206,7 +298,7 @@
             <div class="row no-gutters">
                 <!-- Previous -->
                 <div class="col-6">
-                    <div class="previous bg-img" style="background-image: url(img/bg-img/5.jpg);">
+                    <div class="previous bg-img" style="background-image: url(img/bg-img/baby2.avif);">
                         <div class="overlay-content d-flex align-items-center justify-content-center">
                             <a href="#" class="post-title">The Female Body Shape Men Find Most Attractive</a>
                             <a href="#" class="previous-link"><i class="arrow_left"></i></a>
@@ -215,7 +307,7 @@
                 </div>
                 <!-- Next -->
                 <div class="col-6">
-                    <div class="next bg-img" style="background-image: url(img/bg-img/49.jpg);">
+                    <div class="next bg-img" style="background-image: url(img/bg-img/baby3.jpg);">
                         <div class="overlay-content d-flex align-items-center justify-content-center">
                             <a href="#" class="post-title">Vietnam's largest art community</a>
                             <a href="#" class="next-link"><i class="arrow_right"></i></a>
@@ -227,95 +319,7 @@
     </div>
     <!-- Pager Area End -->
 
-    <!-- Related News Area Start -->
-    <div class="related-news-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading">
-                        <h2>Recommended For You</h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- Single Blog Area -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-post-area">
-                        <!-- Post Thumbnail -->
-                        <a href="#" class="post-thumbnail"><img src="img/bg-img/52.jpg" alt=""></a>
-                        <!-- Post Catagory -->
-                        <a href="#" class="btn post-catagory">Camera</a>
-                        <!-- Post Conetent -->
-                        <div class="post-content">
-                            <div class="post-meta">
-                                <a href="#">May 19, 2019</a>
-                                <a href="#">3 Comment</a>
-                            </div>
-                            <a href="#" class="post-title">The Female Body Shape Men Find</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Blog Area -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-post-area">
-                        <!-- Post Thumbnail -->
-                        <a href="#" class="post-thumbnail"><img src="img/bg-img/53.jpg" alt=""></a>
-                        <!-- Post Catagory -->
-                        <a href="#" class="btn post-catagory">Country</a>
-                        <!-- Post Conetent -->
-                        <div class="post-content">
-                            <div class="post-meta">
-                                <a href="#">May 19, 2019</a>
-                                <a href="#">3 Comment</a>
-                            </div>
-                            <a href="#" class="post-title">Vietnam's largest art community</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Blog Area -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-post-area">
-                        <!-- Post Thumbnail -->
-                        <a href="#" class="post-thumbnail"><img src="img/bg-img/54.jpg" alt=""></a>
-                        <!-- Post Catagory -->
-                        <a href="#" class="btn post-catagory">Camera</a>
-                        <!-- Post Conetent -->
-                        <div class="post-content">
-                            <div class="post-meta">
-                                <a href="#">May 19, 2019</a>
-                                <a href="#">3 Comment</a>
-                            </div>
-                            <a href="#" class="post-title">Photo awards of the year</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Blog Area -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-post-area">
-                        <!-- Post Thumbnail -->
-                        <a href="#" class="post-thumbnail"><img src="img/bg-img/55.jpg" alt=""></a>
-                        <!-- Post Catagory -->
-                        <a href="#" class="btn post-catagory">Tips</a>
-                        <!-- Post Conetent -->
-                        <div class="post-content">
-                            <div class="post-meta">
-                                <a href="#">May 19, 2019</a>
-                                <a href="#">3 Comment</a>
-                            </div>
-                            <a href="#" class="post-title">The Female Body Shape Men Find</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="border-top mt-5"></div>
-        </div>
-    </div>
-    <!-- Related News Area End -->
+    
 
     <!-- Comment Area Start -->
     <div class="comment-area section-padding-80">
@@ -323,89 +327,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-9">
                     <!-- Comments Area -->
-                    <div class="comment_area clearfix">
-                        <h4 class="mb-30">02 Comments</h4>
-
-                        <ol>
-                            <!-- Single Comment Area -->
-                            <li class="single_comment_area">
-                                <!-- Comment Content -->
-                                <div class="comment-content d-flex">
-                                    <!-- Comment Author -->
-                                    <div class="comment-author">
-                                        <img src="img/bg-img/32.jpg" alt="author">
-                                    </div>
-                                    <!-- Comment Meta -->
-                                    <div class="comment-meta">
-                                        <a href="#" class="post-date">27 Aug 2019</a>
-                                        <h5>Brandon Kelley</h5>
-                                        <p>Neque porro qui squam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
-                                        <a href="#" class="like">Like</a>
-                                        <a href="#" class="reply">Reply</a>
-                                    </div>
-                                </div>
-
-                                <ol class="children">
-                                    <li class="single_comment_area">
-                                        <!-- Comment Content -->
-                                        <div class="comment-content d-flex">
-                                            <!-- Comment Author -->
-                                            <div class="comment-author">
-                                                <img src="img/bg-img/33.jpg" alt="author">
-                                            </div>
-                                            <!-- Comment Meta -->
-                                            <div class="comment-meta">
-                                                <a href="#" class="post-date">27 Aug 2018</a>
-                                                <h5>Mia Maya</h5>
-                                                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu adipisci velit, sed quia non numquam eius modi</p>
-                                                <a href="#" class="like">Like</a>
-                                                <a href="#" class="reply">Reply</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ol>
-                            </li>
-
-                            <!-- Single Comment Area -->
-                            <li class="single_comment_area">
-                                <!-- Comment Content -->
-                                <div class="comment-content d-flex">
-                                    <!-- Comment Author -->
-                                    <div class="comment-author">
-                                        <img src="img/bg-img/34.jpg" alt="author">
-                                    </div>
-                                    <!-- Comment Meta -->
-                                    <div class="comment-meta">
-                                        <a href="#" class="post-date">27 Aug 2018</a>
-                                        <h5>Mike Phillips</h5>
-                                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu adipisci velit, sed quia non numquam eius modi</p>
-                                        <a href="#" class="like">Like</a>
-                                        <a href="#" class="reply">Reply</a>
-                                    </div>
-                                </div>
-                                
-                                <ol class="children">
-                                    <li class="single_comment_area">
-                                        <!-- Comment Content -->
-                                        <div class="comment-content d-flex">
-                                            <!-- Comment Author -->
-                                            <div class="comment-author">
-                                                <img src="img/bg-img/33.jpg" alt="author">
-                                            </div>
-                                            <!-- Comment Meta -->
-                                            <div class="comment-meta">
-                                                <a href="#" class="post-date">27 Aug 2018</a>
-                                                <h5>Mia Maya</h5>
-                                                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu adipisci velit, sed quia non numquam eius modi</p>
-                                                <a href="#" class="like">Like</a>
-                                                <a href="#" class="reply">Reply</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ol>
-                            </li>
-                        </ol>
-                    </div>
+                    
 
                     <!-- Leave A Reply -->
                     <div class="alime-contact-form mt-50">
@@ -439,114 +361,266 @@
     </div>
     <!-- Comment Area End -->
 
-    <!-- Follow Area Start -->
-    <div class="follow-area clearfix">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading text-center">
-                        <h2>Follow Instagram</h2>
-                        <p>@Alime_photographer</p>
+    <!----Review Section-->
+    <div class="container-fluid bg-body-tertiary py-5 mb-4" >
+        <h1 class="d-flex justify-content-center align-items-center">Review Section</h1>
+        <div id="testimonialCarousel" class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card shadow-sm rounded-3">
+                        
+                        <div class="card-body">
+                            <div class="d-flex align-items-center pt-2">
+                                <img src="https://codingyaar.com/wp-content/uploads/square-headshot-1.png"
+                                    alt="bootstrap testimonial carousel slider 2">
+                                <div>
+                                    <h5 class="card-title fw-bold">Jane Doe</h5>
+                                    <span class="text-secondary">CEO, Example Company</span>
+                                    <p>⭐⭐⭐⭐⭐</p>
+                                </div>
+                            </div>
+                            <p class="card-text">I just want to say that, you know how to click someone's smile in a frame. I just thanked myself for choosing you for my maternity photoshoot.  </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card shadow-sm rounded-3">
+                        
+                        <div class="card-body">
+                            <div class="d-flex align-items-center pt-2">
+                                <img src="https://codingyaar.com/wp-content/uploads/square-headshot-2.png"
+                                    alt="bootstrap testimonial carousel slider 2">
+                                <div>
+                                    <h5 class="card-title fw-bold">June Doe</h5>
+                                    <span class="text-secondary">CEO, Example Company</span>
+                                    <p>⭐⭐⭐⭐⭐</p>
+                                </div>
+                            </div>
+                            <p class="card-text">We had an amazing experience at Heaven Studio. Abhi Arya shown high patience while Baby Photoshoot and shown great level of comfort during shoot.  </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card shadow-sm rounded-3">
+                        
+                        <div class="card-body">
+                            <div class="d-flex align-items-center pt-2">
+                                <img src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg"
+                                    alt="bootstrap testimonial carousel slider 2">
+                                <div>
+                                    <h5 class="card-title fw-bold">John Doe</h5>
+                                    <span class="text-secondary">CEO, Example Company</span>
+                                    <p>⭐⭐⭐⭐⭐</p>
+                                </div>
+                            </div>
+                            <p class="card-text">We had an amazing experience at Heaven Studio. Abhi Arya shown high patience while Baby Photoshoot and shown great level of comfort during shoot.  </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card shadow-sm rounded-3">
+                        
+                        <div class="card-body">
+                            <div class="d-flex align-items-center pt-2">
+                                <img src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg"
+                                    alt="bootstrap testimonial carousel slider 2">
+                                <div>
+                                    <h5 class="card-title fw-bold">John Doe</h5>
+                                    <span class="text-secondary">CEO, Example Company</span>
+                                    <p>⭐⭐⭐⭐⭐</p>
+                                </div>
+                            </div>
+                            <p class="card-text">We had an amazing experience at Heaven Studio. Abhi Arya shown high patience while Baby Photoshoot and shown great level of comfort during shoot</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card shadow-sm rounded-3">
+                        
+                        <div class="card-body">
+                            <div class="d-flex align-items-center pt-2">
+                                <img src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg"
+                                    alt="bootstrap testimonial carousel slider 2">
+                                <div>
+                                    <h5 class="card-title fw-bold">John Doe</h5>
+                                    <span class="text-secondary">CEO, Example Company</span>
+                                    <p>⭐⭐⭐⭐⭐</p>
+                                </div>
+                            </div>
+                            <p class="card-text">It was the first professional photo shoot for our twin girls. It was tempting but a difficult choice to make. We got in touch with several professionals .</p>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card shadow-sm rounded-3">
+                        
+                        <div class="card-body">
+                            <div class="d-flex align-items-center pt-2">
+                                <img src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg"
+                                    alt="bootstrap testimonial carousel slider 2">
+                                <div>
+                                    <h5 class="card-title fw-bold">John Doe</h5>
+                                    <span class="text-secondary">CEO, Example Company</span>
+                                    <p>⭐⭐⭐⭐⭐</p>
+                                </div>
+                            </div>
+                            <p class="card-text">We had an amazing experience at Heaven Studio. Abhi Arya shown high patience while Baby Photoshoot and shown great level of comfort during shoot.</p>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card shadow-sm rounded-3">
+                       
+                        <div class="card-body">
+                            <div class="d-flex align-items-center pt-2">
+                                <img src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg"
+                                    alt="bootstrap testimonial carousel slider 2">
+                                <div>
+                                    <h5 class="card-title fw-bold">John Doe</h5>
+                                    <span class="text-secondary">CEO, Example Company</span>
+                                    <p>⭐⭐⭐⭐⭐</p>
+                                </div>
+                            </div>
+                            <p class="card-text">We had an amazing experience at Heaven Studio. Abhi Arya shown high patience while Baby Photoshoot and shown great level of comfort during shoot.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card shadow-sm rounded-3">
+                       
+                        <div class="card-body">
+                            <div class="d-flex align-items-center pt-2">
+                                <img src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg"
+                                    alt="bootstrap testimonial carousel slider 2">
+                                <div>
+                                    <h5 class="card-title fw-bold">John Doe</h5>
+                                    <span class="text-secondary">CEO, Example Company</span>
+                                    <p>⭐⭐⭐⭐⭐</p>
+                                </div>
+                            </div>
+                            <p class="card-text">We had an amazing experience at Heaven Studio. Abhi Arya shown high patience while Baby Photoshoot and shown great level of comfort during shoot.</p>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Instagram Feed Area -->
-        <div class="instragram-feed-area owl-carousel">
-            <!-- Single Instagram Item -->
-            <div class="single-instagram-item">
-                <img src="img/bg-img/11.jpg" alt="">
-                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                    <a href="#">
-                        <i class="ti-instagram" aria-hidden="true"></i>
-                        <span>Alime_photographer</span>
-                    </a>
-                </div>
-            </div>
-            <!-- Single Instagram Item -->
-            <div class="single-instagram-item">
-                <img src="img/bg-img/12.jpg" alt="">
-                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                    <a href="#">
-                        <i class="ti-instagram" aria-hidden="true"></i>
-                        <span>Alime_photographer</span>
-                    </a>
-                </div>
-            </div>
-            <!-- Single Instagram Item -->
-            <div class="single-instagram-item">
-                <img src="img/bg-img/13.jpg" alt="">
-                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                    <a href="#">
-                        <i class="ti-instagram" aria-hidden="true"></i>
-                        <span>Alime_photographer</span>
-                    </a>
-                </div>
-            </div>
-            <!-- Single Instagram Item -->
-            <div class="single-instagram-item">
-                <img src="img/bg-img/14.jpg" alt="">
-                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                    <a href="#">
-                        <i class="ti-instagram" aria-hidden="true"></i>
-                        <span>Alime_photographer</span>
-                    </a>
-                </div>
-            </div>
-            <!-- Single Instagram Item -->
-            <div class="single-instagram-item">
-                <img src="img/bg-img/15.jpg" alt="">
-                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                    <a href="#">
-                        <i class="ti-instagram" aria-hidden="true"></i>
-                        <span>Alime_photographer</span>
-                    </a>
-                </div>
-            </div>
-            <!-- Single Instagram Item -->
-            <div class="single-instagram-item">
-                <img src="img/bg-img/16.jpg" alt="">
-                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                    <a href="#">
-                        <i class="ti-instagram" aria-hidden="true"></i>
-                        <span>Alime_photographer</span>
-                    </a>
-                </div>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
-    <!-- Follow Area End -->
+<!------Review Section-->
+ <!-----What's Up Icon-->
+     
+ <div class="contact-icons">
+    <a href="#" target="_blank" class="whatsapp" title="Chat on WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+    <a href="#" class="call" title="Call Us">
+        <i class="bi bi-telephone"></i>
+    </a>
+</div>
+<!---What's Up Icon-->
+
+
 
     <!-- Footer Area Start -->
-    <footer class="footer-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="footer-content d-flex align-items-center justify-content-between">
-                        <!-- Copywrite Text -->
-                        <div class="copywrite-text">
-                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                        </div>
-                        <!-- Footer Logo -->
-                        <div class="footer-logo">
-                            <a href="#"><img src="img/core-img/logo2.png" alt=""></a>
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="ti-facebook" aria-hidden="true"></i></a>
-                            <a href="#"><i class="ti-twitter-alt" aria-hidden="true"></i></a>
-                            <a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a>
-                            <a href="#"><i class="ti-pinterest" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
+    <footer>
+        <div class="container footer-container">
+            <!-- First Section: Image -->
+            <div class="footer-section footer-logo">
+                <img src="img/bg-img/logo-removebg-preview.png" width="150px" height="150px" alt="Company Logo">
+                <p style="color: black; font-size: 15px">Welcome to Garvita Production Company, where creativity meets precision. </p>
+                
             </div>
+
+            <!-- Second Section: Quick Links -->
+            <div class="footer-section footer-links">
+                <h5>Quick Links</h5>
+              
+                <ul>
+                    <li><a href="index.html"> ➤ Home </a></li>
+                    <li><a href="about.html"> ➤ About Us</a></li>
+                    <li><a href="career.html"> ➤ career</a></li>
+                    <li><a href="contact.html"> ➤ Contact</a></li>
+                    <li><a href="maternity.html"> ➤ Portfolio</a></li>
+                </ul>
+            </div>
+            <div class="footer-section footer-links">
+                <h5>Services</h5>
+               
+                <ul>
+                    <li><a href="maternity.html"> ➤ Maternity</a></li>
+                    <li><a href="wedding.html"> ➤ Wedding</a></li>
+                    <li><a href="family.html"> ➤ Family</a></li>
+                    <li><a href="new-born.html"> ➤ New-born</a></li>
+                    <li><a href="kids.html"> ➤ Kids</a></li>
+                </ul>
+            </div>
+
+            <!-- Third Section: Address -->
+            <div class="footer-section footer-address">
+                <h5> Address</h5>
+                <p> <i class="bi bi-geo-alt" style="font-size: 25px; font-weight: 500;"></i> Office no 1217<br> Gali, no-4, Balram nagar,colony Ghaziabad</p>
+                <p> <i class="bi bi-telephone" style="font-size: 25px; font-weight: 500;"></i> Phone: 9582924570</p>
+                <!-- <p>Email: info@example.com</p> -->
+            </div>
+        </div>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright: <a href="">Garvita Production</a> Designed by
+            <a class="text-reset fw-bold" href="https://www.bhoomitechzone.in/">BhoomitechZone Pvt ltd</a>
         </div>
     </footer>
     <!-- Footer Area End -->
+
+     <!-- jQuery -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <!-- Bootstrap JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+     <script>
+         const multipleItemCarousel = document.querySelector("#testimonialCarousel");
+ 
+         if (window.matchMedia("(min-width: 576px)").matches) {
+             const carousel = new bootstrap.Carousel(multipleItemCarousel, {
+                 interval: false
+             });
+ 
+             var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+             var cardWidth = $(".carousel-item").width();
+ 
+             var scrollPosition = 0;
+ 
+             $(".carousel-control-next").on("click", function () {
+                 if (scrollPosition < carouselWidth - cardWidth * 3) {
+                     scrollPosition += cardWidth;
+                     $(".carousel-inner").animate({ scrollLeft: scrollPosition }, 800);
+                 }
+             });
+ 
+             $(".carousel-control-prev").on("click", function () {
+                 if (scrollPosition > 0) {
+                     scrollPosition -= cardWidth;
+                     $(".carousel-inner").animate({ scrollLeft: scrollPosition }, 800);
+                 }
+             });
+         } else {
+             $(multipleItemCarousel).addClass("slide");
+         }
+     </script>
 
     <!-- **** All JS Files ***** -->
     <!-- jQuery 2.2.4 -->

@@ -2666,7 +2666,7 @@ input:required {
 .contact-heading {
   font-family: 'Georgia', serif;
   font-weight: bold;
-  color: white;
+  color: black;
   font-size: 40px;
 }
 
@@ -2833,6 +2833,7 @@ footer {
 .contact-info p {
   color: white;
 }
+
 
 
 
